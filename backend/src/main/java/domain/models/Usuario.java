@@ -9,7 +9,6 @@ public class Usuario {
 
     //    Constructor
     public Usuario() {
-
     }
 
 //    Constructor con parametros
@@ -20,10 +19,17 @@ public class Usuario {
         this.password = password;
     }
 
+    @Override
+    public String toString() {
+        return "Usuario{" +
+                "username='" + username + '\'' +
+                ", name='" + name + '\'' +
+                ", email='" + email + '\'' +
+                ", password='" + password + '\'' +
+                '}';
+    }
 
-//    Getters y setters
-
-
+    //    Getters y setters
     public String getUsername() {
         return username;
     }

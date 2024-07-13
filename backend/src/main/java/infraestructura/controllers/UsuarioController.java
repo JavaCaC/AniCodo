@@ -11,6 +11,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.ArrayList;
 
 @WebServlet("/api/users")
 public class UsuarioController extends HttpServlet {
@@ -42,7 +43,26 @@ public class UsuarioController extends HttpServlet {
             } catch (NumberFormatException e) {
                 throw new RuntimeException(e);
             }
+
+        } else {
+
+            ArrayList<Usuario> listUsuarios = service.getAllUsers();
+
+            if (!listUsuarios.isEmpty()) {
+
+                resp.setStatus(200);
+                resp.setContentType("application/json");
+                resp.setCharacterEncoding("UTF-8");
+                resp.getWriter().write(mapper.writeValueAsString(listUsuarios));
+
+            } else {
+                resp.setStatus(HttpServletResponse.SC_NO_CONTENT);
+                resp.getWriter().write("No se encontro a ningun usuario");
+            }
+
         }
+
+
 
 
     }

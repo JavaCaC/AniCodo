@@ -42,7 +42,6 @@ public class MySQLPersistenciaImpl implements IPersistencia {
 
     }
 
-
     @Override
     public Usuario findUserById(int id) {
 
@@ -66,17 +65,43 @@ public class MySQLPersistenciaImpl implements IPersistencia {
                 return user;
             }
 
-
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
         return user;
     }
 
+
     @Override
     public ArrayList<Usuario> getAllUsers() {
-        return null;
+
+        ArrayList<Usuario> usuarios = new ArrayList<>();
+        String sql = "SELECT * FROM users";
+
+        try {
+            PreparedStatement prep = conexion.prepareStatement(sql);
+
+            ResultSet set = prep.executeQuery();
+
+            while (set.next()) {
+
+                Usuario usuario = new Usuario();
+                usuario.setUsername(set.getString("username"));
+                usuario.setName(set.getString("name"));
+                usuario.setEmail(set.getString("email"));
+                usuario.setPassword(set.getString("password"));
+
+                usuarios.add(usuario);
+            }
+            return usuarios;
+
+
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
     }
+
+
 
     @Override
     public void deleteUser(int id) {
