@@ -79,4 +79,27 @@ public class UsuarioController extends HttpServlet {
 //        devolvemos el usuario creado
         resp.getWriter().write(mapper.writeValueAsString(user));
     }
+
+
+    @Override
+    protected void doDelete(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+
+        String id_str = req.getParameter("id");
+
+        try {
+            int id = Integer.valueOf(id_str);
+            service.deleteUser(id);
+
+
+            resp.setStatus(200);
+            resp.setContentType("application/json");
+            resp.getWriter().write("Se elimino al usuario con id:" + id);
+
+
+        } catch (NumberFormatException e) {
+            throw new RuntimeException(e);
+        }
+
+
+    }
 }

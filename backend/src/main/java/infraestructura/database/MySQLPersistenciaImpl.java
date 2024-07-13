@@ -106,5 +106,17 @@ public class MySQLPersistenciaImpl implements IPersistencia {
     @Override
     public void deleteUser(int id) {
 
+        String sql = "DELETE FROM users WHERE id = ?";
+
+        try {
+            PreparedStatement prep = conexion.prepareStatement(sql);
+
+            prep.setInt(1, id);
+            prep.executeUpdate();
+
+
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
     }
 }
