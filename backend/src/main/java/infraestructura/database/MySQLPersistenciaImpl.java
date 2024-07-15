@@ -35,7 +35,6 @@ public class MySQLPersistenciaImpl implements IPersistencia {
 
             prep.executeUpdate();
             prep.close();
-            System.out.println("se guardaron en la database");
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }

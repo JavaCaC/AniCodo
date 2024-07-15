@@ -7,6 +7,9 @@
     <list default="true" id="a99bc462-46e0-4904-9293-295c1ac5f55c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/infraestructura/controllers/UsuarioController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/infraestructura/controllers/UsuarioController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/infraestructura/database/MySQLPersistenciaImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/infraestructura/database/MySQLPersistenciaImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/infraestructura/controllers/UsuarioController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/infraestructura/controllers/UsuarioController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../resources/js/register.js" beforeDir="false" afterPath="$PROJECT_DIR$/../resources/js/register.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +40,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Smart Tomcat.Unnamed.executor": "Run",
     "git-widget-placeholder": "users",
     "kotlin-language-version-configured": "true"
   }
@@ -49,8 +53,11 @@
       <predefined_log_file id="Tomcat Manager Log" />
       <predefined_log_file id="Tomcat Host Manager Log" />
       <option name="catalinaBase" value="C:\Users\leito\.SmartTomcat\backend\backend" />
-      <option name="contextPath" value="/backend" />
+      <option name="contextPath" value="/" />
       <option name="docBase" value="$PROJECT_DIR$/src/main/webapp" />
+      <option name="envOptions">
+        <map />
+      </option>
       <option name="extraClassPath" value="" />
       <option name="tomcatInfo">
         <TomcatInfo>

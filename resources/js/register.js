@@ -2,7 +2,9 @@ document.addEventListener('DOMContentLoaded',()=>{
     const form = document.querySelector('#register-form');
     const errorMessage = document.querySelector('#error-message');
 
-    form.addEventListener('submit',(event)=>{
+    const url = "http://localhost:8080/api/users"
+
+    form.addEventListener('submit', async (event)=>{
         event.preventDefault();
 
         const username = form.username.value;
@@ -45,7 +47,28 @@ document.addEventListener('DOMContentLoaded',()=>{
 
         // Si no hay errores, envía el formulario (aquí solo muestro un alert para demostrar)
         if (!hasError) {
-            alert('Formulario enviado exitosamente!');
+     
+
+            const UserData ={
+                username: username,
+                name: name,
+                email: email,
+                password: password,
+
+            }
+
+            // hacemos la peticion
+            const response = await fetch(url, {
+                method: "post",
+                headers:{"Content-Type":"application/json"},
+                body: JSON.stringify(UserData)
+
+            })
+
+            if (response.ok){
+                alert('Formulario enviado exitosamente!');
+            }
+
             // Resetea el formulario
             document.getElementById('register-form').reset();
          }
