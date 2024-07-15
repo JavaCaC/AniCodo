@@ -2,7 +2,11 @@ header{
     background-color: pink;
     display: flex;
     justify-content: space-between;
-    height: 60px;
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    box-shadow: 0px 0px 50px black;
+    height: 8vh;
 
 }
 
@@ -28,29 +32,6 @@ header{
     align-items: center;
 }
 
-#text-main{
-    font-size: 30px;
-    font-family: cursive;
-    background-color: #ffffff50;
-    backdrop-filter: blur(3px);
-    border-radius: 10%;
-    margin-top: 20px;
-}
-
-.nav-bar{   
-    margin-right: 5%;
-    display: flex;
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center;
-    gap: 40px;
-}
-
-.botton-nav{
-    color: black;
-    backdrop-filter: blur(3px);
-    border-radius: 10%
-}
-
 .button-div{
     text-decoration: none;
     color: black;
@@ -58,7 +39,35 @@ header{
     backdrop-filter: blur(3px);
     border-radius: 10%;
     padding: 10px;
+    transition: transform 0.3s ease;
 }
+
+.button-div:hover{
+    transform: rotate(10deg);
+
+}
+
+.nav-bar{   
+    margin-right: 5%;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+
+}
+
+.nav-bar__button{
+    color: black;
+    backdrop-filter: blur(3px);
+    border-radius: 10%;
+    text-decoration: none;
+    transition: transform 0.5s ease;
+}
+
+.nav-bar__button:hover{
+    transform: scale(1.1);
+}
+
 
 #login-a{
     background-color: black;
@@ -84,6 +93,15 @@ main{
 
 .tituloDemon{
     height: 100px;
+}
+
+#text-main{
+    font-size: 30px;
+    font-family: cursive;
+    background-color: #ffffff50;
+    backdrop-filter: blur(3px);
+    border-radius: 10%;
+    margin-top: 20px;
 }
 
 .tituloIcon{
