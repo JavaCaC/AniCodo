@@ -37,7 +37,7 @@ header{
 main {
     height: 100%;
     background-image: url('../img/login.jpg'); 
-    background-size: contain; 
+    background-size: cover; 
     background-repeat: repeat; 
 }
 

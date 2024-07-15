@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded',()=>{
         if (!hasError) {
      
 
-            const UserData ={
+            const userData ={
                 username: username,
                 name: name,
                 email: email,
@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded',()=>{
             const response = await fetch(url, {
                 method: "post",
                 headers:{"Content-Type":"application/json"},
-                body: JSON.stringify(UserData)
+                body: JSON.stringify(userData)
 
             })
 
