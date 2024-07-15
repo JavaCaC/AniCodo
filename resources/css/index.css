@@ -159,6 +159,9 @@ main{
     text-wrap: wrap;
     text-align: center;
 }
+#section-cards{
+    width: 100%;
+}
 
 /* FOOTER */
 
