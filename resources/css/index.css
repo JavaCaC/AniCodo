@@ -21,7 +21,7 @@ header{
     position: sticky;
     top: 0;
     z-index: 20;
-    height: 10vh;
+    height: 9vh;
 }
 
 .card-character-home {
@@ -51,6 +51,8 @@ header{
 
 }
 
+
+
 .nav-bar__list{
     width: 95%;
     display: flex;
@@ -62,7 +64,6 @@ header{
 .nav-bar__button{
     backdrop-filter: blur(3px);
     border-radius: 10%;
-    text-decoration: none;
     padding: 10px;
     margin: 0 10px;
 
@@ -79,6 +80,8 @@ header{
 }
 
 
+
+
 .button-div{
     margin-right: auto;
     text-decoration: none;
@@ -86,7 +89,6 @@ header{
     background-color: #ffffff50;
     backdrop-filter: blur(3px);
     border-radius: 10%;
-    padding: 10px;
     transition: transform 0.3s ease;
 }
 
@@ -94,6 +96,19 @@ header{
     transform: rotate(10deg);
 
 }
+
+.nav-bar__icon{
+    position: absolute;
+    top:10px;
+    left: 15px;
+    margin-left: 30px;
+    width: 60px;
+    rotate: 30deg;
+    margin-top: 0;
+    padding: 0;
+    transform: scaleX(-1);
+}
+
 
 
 
@@ -115,34 +130,37 @@ main{
 }
 
 .tituloYparrafo{
+    margin-top: 60px;
     display: flex;
     justify-content: center;
-    flex-direction: column;
     align-items: center;
-    height: 200px;
+    flex-direction: column;
+    width: 90%;
 }
+
 
 .tituloDemon{
-    height: 100px;
+    max-width: 100%;
+    max-height: 100%;
+    min-width: 1000px;
 }
 
-#text-main{
-    font-size: 30px;
+
+.p-top-main{
+
+    font-size: 2rem;
     font-family: cursive;
     background-color: #ffffff50;
     backdrop-filter: blur(3px);
     border-radius: 10%;
     margin-top: 20px;
+    width: 100%;
+    height: auto;
+    text-wrap: wrap;
+    text-align: center;
 }
 
-.tituloIcon{
-    width: 100px;
-
-}
-
-.p-top-main{
-    height: 50px;
-}
+/* FOOTER */
 
 .footer{
     width: 100%;
