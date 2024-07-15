@@ -1,13 +1,27 @@
+*{
+    margin: 0;
+}
+
+ul{
+    padding: 0;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    font-size: 18px;
+    font-family: monospace;
+}
+
+
 header{
-    background-color: pink;
-    display: flex;
-    justify-content: space-between;
     position: sticky;
     top: 0;
     z-index: 20;
-    box-shadow: 0px 0px 50px black;
-    height: 8vh;
-
+    height: 10vh;
 }
 
 .card-character-home {
@@ -26,14 +40,47 @@ header{
 }
 
 /* HEADER NAVBAR */
-.header-div{
-    margin-left: 5%;
-    display: flex;
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center;
+
+.nav-bar{
+    background-color: pink;
+    padding: 16px 0px;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 50px black;
+
+    height: auto;
+
 }
 
+.nav-bar__list{
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    list-style: none;
+}
+
+.nav-bar__button{
+    backdrop-filter: blur(3px);
+    border-radius: 10%;
+    text-decoration: none;
+    padding: 10px;
+    margin: 0 10px;
+
+    transition: transform 0.7s ease;
+}
+
+.nav-bar__button a{
+    color: black;
+
+}
+
+.nav-bar__button:hover{
+    transform: scale(1.1);
+}
+
+
 .button-div{
+    margin-right: auto;
     text-decoration: none;
     color: black;
     background-color: #ffffff50;
@@ -48,26 +95,7 @@ header{
 
 }
 
-.nav-bar{   
-    margin-right: 5%;
-    display: flex;
-    align-items: center;
-    gap: 40px;
-    flex-wrap: wrap;
 
-}
-
-.nav-bar__button{
-    color: black;
-    backdrop-filter: blur(3px);
-    border-radius: 10%;
-    text-decoration: none;
-    transition: transform 0.5s ease;
-}
-
-.nav-bar__button:hover{
-    transform: scale(1.1);
-}
 
 /*  */
 
@@ -130,6 +158,5 @@ main{
     text-align: center;
     color: white;
     font-weight: bold;
-    font-family: monospace;
     margin-bottom: 0;
 }
