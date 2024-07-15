@@ -25,6 +25,7 @@ header{
     background-color: whitesmoke;
 }
 
+/* HEADER NAVBAR */
 .header-div{
     margin-left: 5%;
     display: flex;
@@ -68,6 +69,7 @@ header{
     transform: scale(1.1);
 }
 
+/*  */
 
 #login-a{
     background-color: black;
@@ -81,6 +83,7 @@ main{
     background-image: url('../img/nezuko.jpg'); 
     background-size: contain; 
     background-repeat: repeat; 
+    padding-bottom: 50px;
 }
 
 .tituloYparrafo{
@@ -113,13 +116,20 @@ main{
     height: 50px;
 }
 
-#p-footer{
+.footer{
+    width: 100%;
+    height: 10vh;
     background: #854d5c;
     display: flex;
-    justify-content: center;
     align-items: center;
-    height: 120px;
+    justify-content: center;
+}
+
+#p-footer{
+    width: 50%;
+    text-align: center;
     color: white;
     font-weight: bold;
     font-family: monospace;
+    margin-bottom: 0;
 }
