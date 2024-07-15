@@ -1,12 +1,27 @@
 body {
-    min-height: 100vh;
+    height: 100vh;
+    font-size: 18px;
+    font-family: monospace;
 }
 
-main {
-    min-height: 90vh;
-    background-image: url('../img/login.jpg'); 
-    background-size: contain; 
-    background-repeat: repeat; 
+
+header{
+    display: flex;
+    margin: 0;
+    position: absolute;
+    width: 100vw;
+}
+
+.header-div{
+    display: flex;
+    width: 100%;
+}
+
+.header__overlay{
+    height: 300px;
+    background: linear-gradient(to bottom, rgb(22, 22, 22), transparent);
+    width: 100%;
+    position: absolute;
 }
 
 .button-div{
@@ -16,10 +31,20 @@ main {
     backdrop-filter: blur(3px);
     border-radius: 10%;
     padding: 10px;
+    margin: 16px;
 }
+
+main {
+    height: 100%;
+    background-image: url('../img/login.jpg'); 
+    background-size: contain; 
+    background-repeat: repeat; 
+}
+
 
 #link-register{
     color: black;
+    text-align: center;
 }
 
 #login-form {
@@ -28,20 +53,9 @@ main {
 }
 
 
-header{
-    background-color: black;
-    display: flex;
-    justify-content: space-between;
-    height: 60px;
-}
 
-.header-div{
-    margin-left: 5%;
-    display: flex;
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center;
-}
 
 .error{
     color: red;
-}
+} 
+
