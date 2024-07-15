@@ -11,6 +11,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.lang.module.Configuration;
 import java.util.ArrayList;
 
 @WebServlet("/api/users")
@@ -20,10 +21,26 @@ public class UsuarioController extends HttpServlet {
     UsuarioService service = new UsuarioService();
     ObjectMapper mapper = new ObjectMapper();
 
-//    GET
+//    Config CORS
+
+
+    @Override
+    protected void doOptions(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        ConfiguracionCORS(resp);
+    }
+
+    private void ConfiguracionCORS(HttpServletResponse resp) {
+
+        resp.setHeader("Access-Controll-Allow-Origin", "*");
+        resp.setHeader("Access-Controll-Allow-Methods", "GET, POST, DELETE, OPTIONS");
+        resp.setHeader("Access-Controll-Allow-Headers", "content-type, authorization");
+
+    }
+
+    //    GET
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-
+        ConfiguracionCORS(resp);
         String id_str = req.getParameter("id");
 
         if (id_str != null) {
@@ -70,7 +87,7 @@ public class UsuarioController extends HttpServlet {
 //    POST
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-
+        ConfiguracionCORS(resp);
         Usuario user = mapper.readValue(req.getInputStream(), Usuario.class);
         service.saveUser(user);
 
@@ -83,7 +100,7 @@ public class UsuarioController extends HttpServlet {
 
     @Override
     protected void doDelete(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-
+        ConfiguracionCORS(resp);
         String id_str = req.getParameter("id");
 
         try {

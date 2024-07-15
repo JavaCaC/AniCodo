@@ -4,21 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5978c710-8d03-453d-9297-94954a2cc397" name="Changes" comment="">
+    <list default="true" id="a99bc462-46e0-4904-9293-295c1ac5f55c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/infraestructura/controllers/UsuarioController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/infraestructura/controllers/UsuarioController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Interface" />
-        <option value="Class" />
-      </list>
-    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -30,10 +23,10 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 5
-}</component>
-  <component name="ProjectId" id="2jAEQaiddZNO0I4SHz8DYGQLigH" />
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 6
+}]]></component>
+  <component name="ProjectId" id="2jIDOi2gX0xeIbhYTdgemM2oNoV" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
@@ -43,17 +36,9 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Smart Tomcat.Unnamed.executor": "Run",
     "git-widget-placeholder": "users",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "E:/Python/FULL STACK JAVA Codo a Codo/AniCodo/backend",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "com.poratu.idea.plugins.tomcat.setting.TomcatServersConfigurable"
+    "kotlin-language-version-configured": "true"
   }
 }]]></component>
   <component name="RunManager">
@@ -64,11 +49,8 @@
       <predefined_log_file id="Tomcat Manager Log" />
       <predefined_log_file id="Tomcat Host Manager Log" />
       <option name="catalinaBase" value="C:\Users\leito\.SmartTomcat\backend\backend" />
-      <option name="contextPath" value="/" />
+      <option name="contextPath" value="/backend" />
       <option name="docBase" value="$PROJECT_DIR$/src/main/webapp" />
-      <option name="envOptions">
-        <map />
-      </option>
       <option name="extraClassPath" value="" />
       <option name="tomcatInfo">
         <TomcatInfo>
@@ -87,11 +69,11 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="5978c710-8d03-453d-9297-94954a2cc397" name="Changes" comment="" />
-      <created>1720821467676</created>
+      <changelist id="a99bc462-46e0-4904-9293-295c1ac5f55c" name="Changes" comment="" />
+      <created>1721065671085</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1720821467676</updated>
+      <updated>1721065671085</updated>
     </task>
     <servers />
   </component>
