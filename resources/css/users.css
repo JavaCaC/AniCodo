@@ -22,8 +22,8 @@ header{
 
 
 .card-character-home {
-    background-color: #ffffff50;
-    backdrop-filter: blur(3px);
+    background-color:  rgba(172, 212, 250, 0.788);
+    backdrop-filter: blur(5px);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
