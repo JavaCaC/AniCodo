@@ -34,6 +34,7 @@ public class UsuarioController extends HttpServlet {
         resp.setHeader("Access-Control-Allow-Origin", "*");
         resp.setHeader("Access-Control-Allow-Methods", "GET, POST, DELETE, OPTIONS");
         resp.setHeader("Access-Control-Allow-Headers", "content-type, authorization");
+        System.out.println("cors enviado");
 
     }
 
@@ -78,8 +79,6 @@ public class UsuarioController extends HttpServlet {
             }
 
         }
-
-
 
 
     }

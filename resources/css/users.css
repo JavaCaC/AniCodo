@@ -1,0 +1,168 @@
+ul{
+    padding: 0;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    font-size: 18px;
+    font-family: monospace;
+    height: 80.8vh;
+}
+
+
+header{
+    position: sticky;
+    top: 0;
+    z-index: 20;
+}
+
+
+.card-character-home {
+    background-color: #ffffff50;
+    backdrop-filter: blur(3px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05); /* Agranda la tarjeta un 5% */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Mejora la sombra para dar un efecto de elevación */
+}
+
+.card-character-home button {
+    background-color: whitesmoke;
+}
+
+/* HEADER NAVBAR */
+
+.nav-bar{
+    background-color: rgb(172, 212, 250);
+    padding: 12px 0px;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 50px black;
+
+    height: auto;
+
+}
+
+
+.nav-bar__list{
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    list-style: none;
+}
+
+.nav-bar__button{
+    backdrop-filter: blur(3px);
+    border-radius: 10%;
+    padding: 10px;
+    margin: 0 10px;
+
+    transition: transform 0.7s ease;
+}
+
+.nav-bar__button a{
+    color: black;
+
+}
+
+.nav-bar__button:hover{
+    transform: scale(1.1);
+}
+
+.button-div{
+    margin-right: auto;
+    text-decoration: none;
+    color: black;
+    background-color: #ffffff50;
+    backdrop-filter: blur(3px);
+    border-radius: 10%;
+    transition: transform 0.3s ease;
+}
+
+.button-div:hover{
+    transform: rotate(10deg);
+
+}
+
+.nav-bar__icon{
+    position: absolute;
+    top:10px;
+    left: 15px;
+    margin-left: 30px;
+    width: 60px;
+    rotate: 30deg;
+    margin-top: 0;
+    padding: 0;
+    transform: scaleX(-1);
+}
+
+
+#login-a{
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    padding: 6px;
+    
+}
+
+
+main {
+    min-height: 100%;
+    max-height: auto;
+
+    background-image: url('../img/cloud.jpg'); 
+    background-size:cover; 
+    background-repeat: repeat; 
+    padding: 8px;
+
+}
+
+.tituloYparrafo{
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
+}
+
+.p-top-main{
+
+    font-size: 2rem;
+    font-family: cursive;
+    background-color: #ffffff50;
+    backdrop-filter: blur(3px);
+    border-radius: 10%;
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+    text-wrap: wrap;
+    text-align: center;
+}
+#section-cards{
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.footer{
+    width: 100%;
+    height: 10vh;
+    background: rgb(172, 212, 250);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#p-footer{
+    width: 50%;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 0;
+}

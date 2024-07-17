@@ -18,6 +18,7 @@ public class DatabaseConnection {
             return DriverManager.getConnection(URL, USER, PASSWORD);
 
         } catch (SQLException | ClassNotFoundException e) {
+
             throw new RuntimeException(e);
         }
     }
